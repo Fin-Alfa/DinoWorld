@@ -23,19 +23,19 @@ class _FavoritesPageState extends State<FavoritesPage> {
       name: 'Spaghetti Carbonara',
       description:
           'Hidangan pasta klasik Italia yang terbuat dari telur, keju, pancetta, dan lada.',
-      image: 'assets/images/spaghetti_carbonara.jpg',
+      image: '../assets/images/pasta.png',
     ),
     Recipe(
       name: 'Nasi Goreng',
       description:
           'Nasi yang digoreng dengan bumbu khas Indonesia, sering disajikan dengan telur dan ayam.',
-      image: 'assets/images/nasi_goreng.jpg',
+      image: '../assets/images/nasi_goreng.png',
     ),
     Recipe(
       name: 'Sate Ayam',
       description:
           'Daging ayam yang ditusuk dan dipanggang, disajikan dengan saus kacang.',
-      image: 'assets/images/sate_ayam.jpg',
+      image: '../assets/images/sate.png',
     ),
     Recipe(
       name: 'Gado-Gado',

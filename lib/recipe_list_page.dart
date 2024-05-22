@@ -22,7 +22,7 @@ class RecipeListPage extends StatelessWidget {
           'Hidangan pasta klasik Italia yang terbuat dari telur, keju, pancetta, dan lada.',
       ingredients:
           '• 200 gram spaghetti\n• 2 butir telur\n• 50 gram parmesan\n• 100 gram pancetta\n• Lada secukupnya',
-      image: 'assets/images/spaghetti_carbonara.jpg',
+      image: '../assets/images/pasta.png',
     ),
     Recipe(
       name: 'Kari Ayam',
@@ -30,7 +30,7 @@ class RecipeListPage extends StatelessWidget {
           'Kari ayam yang lezat dan pedas dibuat dengan campuran rempah-rempah dan santan.',
       ingredients:
           '• 500 gram ayam\n• 200 ml santan\n• 2 sendok makan bubuk kari\n• 3 buah kentang\n• 2 buah wortel\n• 1 batang serai\n• 4 lembar daun jeruk\n• Garam dan gula secukupnya',
-      image: 'assets/images/kari_ayam.jpg',
+      image: '../assets/images/kari.png',
     ),
     Recipe(
       name: 'Nasi Goreng',
@@ -38,7 +38,7 @@ class RecipeListPage extends StatelessWidget {
           'Nasi yang digoreng dengan bumbu khas Indonesia, sering disajikan dengan telur dan ayam.',
       ingredients:
           '• 300 gram nasi putih\n• 2 butir telur\n• 100 gram ayam suwir\n• 2 siung bawang putih\n• 1 batang daun bawang\n• 2 sendok makan kecap manis\n• 1 sendok makan saus tiram\n• 1 sendok teh garam\n• Minyak secukupnya',
-      image: 'assets/images/nasi_goreng.jpg',
+      image: '../assets/images/nasi_goreng.png',
     ),
     Recipe(
       name: 'Sate Ayam',
@@ -46,7 +46,7 @@ class RecipeListPage extends StatelessWidget {
           'Daging ayam yang ditusuk dan dipanggang, disajikan dengan saus kacang.',
       ingredients:
           '• 500 gram daging ayam\n• Bumbu sate secukupnya\n• Saus kacang\n• Bawang merah goreng\n• Lontong potong-potong',
-      image: 'assets/images/sate_ayam.jpg',
+      image: '../assets/images/sate.png',
     ),
     Recipe(
       name: 'Gado-Gado',
@@ -106,7 +106,7 @@ class RecipeListPage extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/images/food_background.jpg'),
+                image: AssetImage('../assets/images/food_background.png'),
                 fit: BoxFit.cover,
                 colorFilter: ColorFilter.mode(
                   Colors.black.withOpacity(0.3),
