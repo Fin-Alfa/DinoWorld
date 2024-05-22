@@ -12,8 +12,13 @@ class Recipe {
   });
 }
 
-class FavoritesPage extends StatelessWidget {
-  final List<Recipe> favoriteRecipes = [
+class FavoritesPage extends StatefulWidget {
+  @override
+  _FavoritesPageState createState() => _FavoritesPageState();
+}
+
+class _FavoritesPageState extends State<FavoritesPage> {
+  List<Recipe> favoriteRecipes = [
     Recipe(
       name: 'Spaghetti Carbonara',
       description:
@@ -26,6 +31,30 @@ class FavoritesPage extends StatelessWidget {
           'Nasi yang digoreng dengan bumbu khas Indonesia, sering disajikan dengan telur dan ayam.',
       image: 'assets/images/nasi_goreng.jpg',
     ),
+    Recipe(
+      name: 'Sate Ayam',
+      description:
+          'Daging ayam yang ditusuk dan dipanggang, disajikan dengan saus kacang.',
+      image: 'assets/images/sate_ayam.jpg',
+    ),
+    Recipe(
+      name: 'Gado-Gado',
+      description:
+          'Salad Indonesia yang terdiri dari sayuran rebus, tahu, tempe, dan saus kacang.',
+      image: 'assets/images/gado_gado.jpg',
+    ),
+    Recipe(
+      name: 'Rendang',
+      description:
+          'Daging sapi yang dimasak perlahan dengan santan dan rempah-rempah hingga empuk.',
+      image: 'assets/images/rendang.jpg',
+    ),
+    Recipe(
+      name: 'Bakso',
+      description:
+          'Bola daging yang disajikan dalam kuah kaldu dengan mi dan sayuran.',
+      image: 'assets/images/bakso.jpg',
+    ),
     // Tambahkan resep favorit lainnya di sini
   ];
 
@@ -34,6 +63,33 @@ class FavoritesPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Favorites'),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.add),
+            onPressed: () {
+              // Tindakan ketika tombol Tambah ditekan
+              // Di sini bisa ditambahkan logika untuk menambah resep ke daftar favorit
+            },
+          ),
+          PopupMenuButton<String>(
+            onSelected: (String value) {
+              // Tindakan berdasarkan pilihan menu
+              if (value == 'clear') {
+                setState(() {
+                  favoriteRecipes.clear();
+                });
+              }
+            },
+            itemBuilder: (BuildContext context) {
+              return [
+                PopupMenuItem<String>(
+                  value: 'clear',
+                  child: Text('Hapus Semua'),
+                ),
+              ];
+            },
+          ),
+        ],
       ),
       body: favoriteRecipes.isEmpty
           ? Center(

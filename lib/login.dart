@@ -7,7 +7,7 @@ class LoginScreen extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/images/background.png'),
+            image: AssetImage('assets/images/food_background.jpg'),
             fit: BoxFit.cover,
           ),
         ),
@@ -17,24 +17,25 @@ class LoginScreen extends StatelessWidget {
             // KOMENTAR-1: GAMBAR
             CircleAvatar(
               radius: 50.0,
-              backgroundImage: AssetImage('assets/images/logo.png'),
+              backgroundImage: AssetImage('assets/images/fruit_logo.png'),
             ),
 
             // KOMENTAR-2: TEKS
             SizedBox(height: 20.0),
             Text(
-              'Welcome Back!',
+              'Nourish Your Body',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
+                color: Colors.white,
               ),
             ),
             SizedBox(height: 10.0),
             Text(
-              'Sign in to continue',
+              'Sign in to unlock delicious recipes',
               style: TextStyle(
                 fontSize: 16.0,
-                color: Colors.grey[600],
+                color: Colors.white70,
               ),
             ),
 
@@ -51,11 +52,11 @@ class LoginScreen extends StatelessWidget {
                 ),
                 padding: EdgeInsets.symmetric(vertical: 15.0),
                 minWidth: double.infinity,
-                color: Colors.blue,
+                color: Colors.white,
                 child: Text(
                   'Login',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.blue,
                     fontSize: 18.0,
                   ),
                 ),
@@ -68,7 +69,7 @@ class LoginScreen extends StatelessWidget {
               'Powered by MyApp',
               style: TextStyle(
                 fontSize: 14.0,
-                color: Colors.grey[600],
+                color: Colors.white70,
               ),
             ),
           ],
