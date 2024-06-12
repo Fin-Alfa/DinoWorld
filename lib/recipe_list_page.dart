@@ -54,7 +54,7 @@ class RecipeListPage extends StatelessWidget {
           'Salad Indonesia yang terdiri dari sayuran rebus, tahu, tempe, dan saus kacang.',
       ingredients:
           '• 200 gram tahu\n• 200 gram tempe\n• 100 gram kacang panjang\n• 100 gram kol\n• 100 gram taoge\n• Telur rebus\n• Kerupuk\n• Saus kacang',
-      image: 'assets/images/gado_gado.jpg',
+      image: '../assets/images/gadogado.png',
     ),
     Recipe(
       name: 'Rendang',
@@ -62,7 +62,7 @@ class RecipeListPage extends StatelessWidget {
           'Daging sapi yang dimasak perlahan dengan santan dan rempah-rempah hingga empuk.',
       ingredients:
           '• 500 gram daging sapi\n• 300 ml santan\n• 2 batang serai\n• 4 lembar daun jeruk\n• 5 lembar daun salam\n• 1 sendok makan asam jawa\n• Garam dan gula secukupnya',
-      image: 'assets/images/rendang.jpg',
+      image: '../assets/images/rendang.png',
     ),
     Recipe(
       name: 'Bakso',
@@ -70,7 +70,7 @@ class RecipeListPage extends StatelessWidget {
           'Bola daging yang disajikan dalam kuah kaldu dengan mi dan sayuran.',
       ingredients:
           '• 300 gram daging sapi\n• 100 gram tepung tapioka\n• 50 gram tepung terigu\n• 2 siung bawang putih\n• Garam, gula, merica secukupnya\n• 200 gram mi\n• 100 gram sawi\n• Kaldu sapi secukupnya',
-      image: 'assets/images/bakso.jpg',
+      image: '../assets/images/bakso.png',
     ),
     Recipe(
       name: 'Pempek',
@@ -78,7 +78,7 @@ class RecipeListPage extends StatelessWidget {
           'Makanan khas Palembang yang terbuat dari ikan dan sagu, disajikan dengan cuko.',
       ingredients:
           '• 500 gram ikan tenggiri\n• 200 gram tepung sagu\n• 2 butir telur\n• Garam, gula, penyedap rasa secukupnya\n• Air secukupnya\n• Cuko',
-      image: 'assets/images/pempek.jpg',
+      image: '../assets/images/pempek.png',
     ),
     Recipe(
       name: 'Soto Ayam',
@@ -86,7 +86,7 @@ class RecipeListPage extends StatelessWidget {
           'Sup ayam dengan kuah kuning yang disajikan dengan nasi, bihun, dan telur.',
       ingredients:
           '• 500 gram ayam\n• 200 gram bihun\n• 2 butir telur\n• 2 batang serai\n• 3 lembar daun jeruk\n• 2 lembar daun salam\n• 2 cm lengkuas\n• 2 cm jahe\n• Bawang merah, bawang putih, ketumbar, kunyit, garam secukupnya\n• Bawang goreng, seledri, bawang merah goreng untuk taburan',
-      image: 'assets/images/soto_ayam.jpg',
+      image: '../assets/images/soto.png',
     ),
     Recipe(
       name: 'Martabak Manis',
@@ -94,7 +94,7 @@ class RecipeListPage extends StatelessWidget {
           'Kue tebal yang diisi dengan cokelat, keju, atau kacang, dan dilipat.',
       ingredients:
           '• 250 gram tepung terigu\n• 1 butir telur\n• 500 ml air\n• 100 gram gula pasir\n• 1 sendok makan ragi instan\n• 1/2 sendok teh soda kue\n• 1/2 sendok teh garam\n• Keju parut, cokelat meses, kacang sangrai secukupnya',
-      image: 'assets/images/martabak_manis.jpg',
+      image: '../assets/images/martabak.png',
     ),
   ];
 

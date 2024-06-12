@@ -7,7 +7,7 @@ class LoginScreen extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/images/food_background.jpg'),
+            image: AssetImage('../assets/images/food_background.png'),
             fit: BoxFit.cover,
           ),
         ),
@@ -17,13 +17,13 @@ class LoginScreen extends StatelessWidget {
             // KOMENTAR-1: GAMBAR
             CircleAvatar(
               radius: 50.0,
-              backgroundImage: AssetImage('assets/images/fruit_logo.png'),
+              backgroundImage: AssetImage('../assets/images/profile.png'),
             ),
 
             // KOMENTAR-2: TEKS
             SizedBox(height: 20.0),
             Text(
-              'Nourish Your Body',
+              'RM Dinal',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -32,7 +32,7 @@ class LoginScreen extends StatelessWidget {
             ),
             SizedBox(height: 10.0),
             Text(
-              'Sign in to unlock delicious recipes',
+              'Sign in untuk membuka kunci resep lezat',
               style: TextStyle(
                 fontSize: 16.0,
                 color: Colors.white70,
@@ -66,7 +66,7 @@ class LoginScreen extends StatelessWidget {
             // KOMENTAR-4: LOGO BRAND
             SizedBox(height: 20.0),
             Text(
-              'Powered by MyApp',
+              'Powered by DinoWorld',
               style: TextStyle(
                 fontSize: 14.0,
                 color: Colors.white70,
